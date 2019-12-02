@@ -36,7 +36,7 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 
 - Alexandre
 - Fabricio 
-- Gustavo Reis Souza Lima (<a hef="https://github.com/GustavoRSL">@GustavoRSL</a>)
+- Gustavo Reis Souza Lima (<a href="https://github.com/GustavoRSL">@GustavoRSL</a>)
 - Jaqueline
 - Vitor Lucas
 
