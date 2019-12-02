@@ -35,10 +35,10 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 ## Integrantes do Projeto
 
 - Alexandre Alves
-- Fabricio Carvalho
+- Fabricio Carvalho (<a href="https://github.com/FabricioCarvalho-Br"> @FabricioCarvalho-Br</a>)
 - Gustavo Lima (<a href="https://github.com/GustavoRSL">@GustavoRSL</a>)
-- Jaqueline Nicolau
+- Jaqueline Nicolau (<a href="https://github.com/JackeNic"> @JackeNic</a>)
 - Vitor Lucas (<a href="https://www.github.com/oviteira/">@oviteira</a>)
 
 ## Utilização
-O sistema de resolução de equações conta com uma interface gráfica para facilitar a iteração com o usuário desenvolvida apartir do software <a href="https://www.qt.io/download">QTCreator</a>. Contando com uma página inicial com opções de escolha das equações. Após escolher a equação desejada, irá abrir outra página que contem todas as variáveis da equação para preenchê-las sendo necessário apenas deixar em branco a variável que o usuário dejesa calcular. Para fins didáticos implementamos um botão na página das variavéis da equação, que é um atalho para uma video aula mais detalhada da equação.
+O sistema de resolução de equações conta com uma interface gráfica para facilitar a iteração com o usuário desenvolvida apartir do software <a href="https://www.qt.io/download">QTCreator</a>. Contando com uma página inicial com opções de escolha das equações. Após escolher a equação desejada, irá abrir outra página que contem todas as variáveis da equação para preenchê-las sendo necessário apenas deixar em branco a variável que o usuário dejesa calcular. Para fins didáticos implementamos um botão na página das variavéis da equação, que é um atalho para uma video aula mais detalhada sobre a equação.
