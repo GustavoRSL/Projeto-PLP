@@ -34,10 +34,10 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
     
 ## Integrantes do Projeto
 
-- Alexandre Alves Brito Conceição
-- Fabricio 
-- Gustavo Reis Souza Lima (<a href="https://github.com/GustavoRSL">@GustavoRSL</a>)
-- Jaqueline
-- Vitor Lucas
+- Alexandre Alves
+- Fabricio Carvalho
+- Gustavo Lima (<a href="https://github.com/GustavoRSL">@GustavoRSL</a>)
+- Jaqueline Nicolau
+- Vitor Lucas(<a href="https://www.github.com/oviteira/">@oviteira</a>)
 
 
