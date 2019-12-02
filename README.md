@@ -12,3 +12,21 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
     <tr>
       <td> Lei da gravidade </td>
     </tr>
+     <tr>
+      <td> Teoria de relatividade </td>
+    </tr>
+     <tr>
+      <td> Teoria do caos </td>
+    </tr>
+     <tr>
+      <td> Clapeyron </td>
+    </tr>
+     <tr>
+      <td> Torricelli </td>
+    </tr>
+     <tr>
+      <td> Gauss </td>
+    </tr>
+     <tr>
+      <td> Força sobre uma partícula </td>
+    </tr>
