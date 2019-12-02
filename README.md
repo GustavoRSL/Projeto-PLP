@@ -3,7 +3,7 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 # Conjunto de Equações do sistema.
 <table>
   <thead>
-    <th>Equações</th>
+    <th>Equações do sitema</th>
   </thead>
   <tbody>
     <tr>
