@@ -35,9 +35,9 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 ## Integrantes do Projeto
 
 - Alexandre Alves
-- Fabricio Carvalho (<a href="https://github.com/FabricioCarvalho-Br"> @FabricioCarvalho-Br</a>)
+- Fabricio Carvalho (<a href="https://github.com/FabricioCarvalho-Br">@FabricioCarvalho-Br</a>)
 - Gustavo Lima (<a href="https://github.com/GustavoRSL">@GustavoRSL</a>)
-- Jaqueline Nicolau (<a href="https://github.com/JackeNic"> @JackeNic</a>)
+- Jaqueline Nicolau (<a href="https://github.com/JackeNic">@JackeNic</a>)
 - Vitor Lucas (<a href="https://www.github.com/oviteira/">@oviteira</a>)
 
 ## Utilização
