@@ -34,7 +34,7 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
     
 ## Integrantes do Projeto
 
-- Alexandre
+- Alexandre Alves Brito Conceição
 - Fabricio 
 - Gustavo Reis Souza Lima (<a href="https://github.com/GustavoRSL">@GustavoRSL</a>)
 - Jaqueline
