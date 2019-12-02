@@ -30,3 +30,13 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
      <tr>
       <td> Força sobre uma partícula </td>
     </tr>
+    
+#Integrantes do Projeto
+
+- Alexandre
+- Fabricio 
+- Gustavo Reis Souza Lima (@GustavoRSL)
+- Jaqueline
+- Vitor Lucas
+
+
