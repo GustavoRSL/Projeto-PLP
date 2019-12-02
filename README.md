@@ -2,9 +2,6 @@
 Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 8 equações matemáticas. O sistema é capaz de encontrar o valor das variáveis desejadas apartir das equações disponiveis.
 # Conjunto de Equações do sistema.
 <table>
-  <thead>
-    <th>Equações do sitema</th>
-  </thead>
   <tbody>
     <tr>
       <td> Teorema de Pitágoras </td>
