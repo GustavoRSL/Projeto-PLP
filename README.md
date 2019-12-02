@@ -32,7 +32,7 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
     </tr>
 </table>
     
-## Integrantes do Projeto
+## Desenvolvedores
 
 - Alexandre Alves
 - Fabricio Carvalho (<a href="https://github.com/FabricioCarvalho-Br">@FabricioCarvalho-Br</a>)
