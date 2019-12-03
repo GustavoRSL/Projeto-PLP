@@ -38,6 +38,8 @@ O sistema de resolução de equações conta com uma interface gráfica para fac
 - Fazer download do repositório.
 - Extrair o arquivo Zip
 - Abrir o executável.
+- Escolher o diretório para instalar o programa.
+- Abrir o executável "jobPLP".
 
 ## Desenvolvedores
 
