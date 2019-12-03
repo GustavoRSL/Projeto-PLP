@@ -31,11 +31,15 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 
 ## Utilização
 - O sistema de resolução de equações conta com uma interface gráfica para facilitar a iteração com o usuário desenvolvida apartir do software <a href="https://www.qt.io/download">QTCreator</a>. 
+
 - Contando com uma página inicial com opções de escolha das equações. 
+![Laucher](https://user-images.githubusercontent.com/57684538/70069472-95461380-15d0-11ea-9fa3-ea09354d717b.png)
 
 - Após escolher a equação desejada, irá abrir outra página que contem todas as variáveis da equação para preenchê-las, sendo necessário apenas deixar em branco a variável que o usuário dejesa obter o resultado. 
+![Variaveis](https://user-images.githubusercontent.com/57684538/70069138-0cc77300-15d0-11ea-8a7b-a304fc0c0c4f.png)
 
 - Para fins didáticos implementamos um botão na página das variavéis da equação, que é um atalho para uma video aula mais detalhada sobre a equação.
+![Botao](https://user-images.githubusercontent.com/57684538/70069513-a727b680-15d0-11ea-8f16-b5e1edaf48ae.png)
 
 ## Guia de Instalação
 
@@ -44,7 +48,7 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 - Extrair o arquivo Zip.
 - Abrir "Sistemas de Equações.rar".
 - Abrir o executável. 
-- Escolher o diretório para instalar o programa.
+- Escolher algum diretório para instalar o programa.
 - Abrir o executável "jobPLP".
 
 ## Desenvolvedores
