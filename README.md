@@ -45,9 +45,7 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 
 ### Suportado apenas para sistema operacional Windows!
 - Fazer download do repositório.
-- Extrair o arquivo Zip.
-- Abrir "Sistemas de Equações.rar".
-- Abrir o executável "Setup_SRE.exe". 
+- Abrir o executável em "Setup_SRE.exe". 
 - Escolher algum diretório para instalar o programa.
 - Abrir o executável "jobPLP" no diretório instalado.
 
