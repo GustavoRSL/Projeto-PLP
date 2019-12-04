@@ -53,7 +53,7 @@ Sistema de Resolução de Equações, trata-se de um sistema com um conjunto de 
 
 # Desenvolvedores
 
-- Alexandre Alves
+- Alexandre Alves (<a href="https://github.com/alexandre-abc">@alexandre-abc</a>)
 - Fabricio Carvalho (<a href="https://github.com/FabricioCarvalho-Br">@FabricioCarvalho-Br</a>)
 - Gustavo Lima (<a href="https://github.com/GustavoRSL">@GustavoRSL</a>)
 - Jaqueline Nicolau (<a href="https://github.com/JackeNic">@JackeNic</a>)
