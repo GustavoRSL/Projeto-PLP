@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>telaRelatividade</class>
+ <widget class="QDialog" name="telaRelatividade">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Resolução de Equações - Equação da Teoria da Relatividade</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="fileRecourses.qrc">
+    <normaloff>:/new/logo/images/logo.png</normaloff>:/new/logo/images/logo.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>780</width>
+     <height>460</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>780</width>
+     <height>460</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>620</width>
+     <height>460</height>
+    </size>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>781</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="titulo">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>18</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Equação da Teoria da Relatividade</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="formulaPitagoras">
+             <property name="minimumSize">
+              <size>
+               <width>371</width>
+               <height>71</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>371</width>
+               <height>71</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="fileRecourses.qrc">:/new/formulas/images/03.PNG</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnSite">
+               <property name="minimumSize">
+                <size>
+                 <width>268</width>
+                 <height>23</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>201</width>
+                 <height>23</height>
+                </size>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>Como funciona a Equação da teoria da Relatividade?</string>
+               </property>
+               <property name="default">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="descricao">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Insira as variáveis deixando apenas uma vazia:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="LayoutVariaveis">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="E">
+             <item>
+              <widget class="QLabel" name="labelE">
+               <property name="minimumSize">
+                <size>
+                 <width>61</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>61</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>43</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>E</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="variavelE">
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>28</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="M">
+             <item>
+              <widget class="QLabel" name="labelM">
+               <property name="minimumSize">
+                <size>
+                 <width>61</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>61</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>43</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>m</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="variavelM">
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>28</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="C">
+             <item>
+              <widget class="QLabel" name="labelC">
+               <property name="minimumSize">
+                <size>
+                 <width>61</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>61</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>43</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>c</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="variavelC">
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>28</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="btnCalculate">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Calcular</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnCancelar">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Cancelar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="LayoutResposta">
+           <item>
+            <widget class="QLabel" name="titleResultado">
+             <property name="font">
+              <font>
+               <family>Adobe Devanagari</family>
+               <pointsize>30</pointsize>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="text">
+              <string>Resultado</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="respLayout">
+             <item>
+              <widget class="QLabel" name="variavelResp">
+               <property name="minimumSize">
+                <size>
+                 <width>66</width>
+                 <height>66</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>66</width>
+                 <height>66</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>30</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>? =</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="Resp">
+               <property name="minimumSize">
+                <size>
+                 <width>550</width>
+                 <height>66</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>550</width>
+                 <height>66</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>30</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="fileRecourses.qrc"/>
+ </resources>
+ <connections/>
+</ui>

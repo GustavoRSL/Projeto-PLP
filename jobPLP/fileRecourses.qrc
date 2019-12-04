@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/splash">
+        <file>images/splash.png</file>
+        <file>images/splash_600x375.png</file>
+    </qresource>
+    <qresource prefix="/new/variaveis">
+        <file>images/Fm.png</file>
+        <file>images/m1.png</file>
+        <file>images/m2.png</file>
+        <file>images/pLinha.png</file>
+        <file>images/v0.png</file>
+        <file>images/teta.png</file>
+        <file>images/xNew.png</file>
+        <file>images/xOld.png</file>
+        <file>images/xOld1.png</file>
+        <file>images/xOld2.png</file>
+    </qresource>
+    <qresource prefix="/new/logo">
+        <file>images/logo.png</file>
+    </qresource>
+    <qresource prefix="/new/formulas">
+        <file>images/01.PNG</file>
+        <file>images/02.PNG</file>
+        <file>images/03.PNG</file>
+        <file>images/04.PNG</file>
+        <file>images/05.PNG</file>
+        <file>images/07.jpg</file>
+        <file>images/08.PNG</file>
+        <file>images/06.PNG</file>
+    </qresource>
+</RCC>

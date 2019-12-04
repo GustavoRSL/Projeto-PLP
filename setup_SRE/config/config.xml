@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+	<Name>Setup_SRE</Name>
+	<Version>1.0</Version>
+	<Title>Sistema de Resolução de Equações</Title>
+	<Publisher>UFLA</Publisher>
+	<!-- Directory name is used in component.xml -->
+	<StartMenuDir>Sistema de Resolução de Equaçõe</StartMenuDir>
+	<TargetDir>@HomeDir@/Program Files/UFLA/SRE</TargetDir>
+</Installer>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Package>
+	<DisplayName>Sistema de Resolução de Equações</DisplayName>
+	<Description>Software para Resolução de Cálculos Matemáticos e Físicos.</Description>
+	<Version>1.0</Version>
+	<ReleaseDate>2019-11-24</ReleaseDate>
+	<Default>true</Default>
+	<Script>installscript.qs</Script>
+</Package>
