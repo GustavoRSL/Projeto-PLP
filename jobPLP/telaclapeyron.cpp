@@ -3,11 +3,11 @@
 
 telaClapeyron::telaClapeyron(QWidget *parent) : QDialog(parent), ui(new Ui::telaClapeyron){
     ui->setupUi(this);
-    ui->variavelP->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelV->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelN->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelR->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelT->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
+    ui->variavelP->setValidator(new QDoubleValidator(-1000000, 1000000, 3, this));
+    ui->variavelV->setValidator(new QDoubleValidator(-1000000, 1000000, 3, this));
+    ui->variavelN->setValidator(new QDoubleValidator(-1000000, 1000000, 3, this));
+    ui->variavelR->setValidator(new QDoubleValidator(-1000000, 1000000, 3, this));
+    ui->variavelT->setValidator(new QDoubleValidator(-1000000, 1000000, 3, this));
 }
 
 telaClapeyron::~telaClapeyron(){
@@ -28,7 +28,7 @@ void telaClapeyron::Clapeyron(double p, double V, double n, double R, double T, 
 
             ui->variavelResp->setText("p =");
 
-            QString convertido = QString::number(p, 'f', 2);
+            QString convertido = QString::number(p, 'f', 4);
 
             ui->Resp->setText(convertido);
         }
@@ -40,7 +40,7 @@ void telaClapeyron::Clapeyron(double p, double V, double n, double R, double T, 
 
             ui->variavelResp->setText("V =");
 
-            QString convertido = QString::number(V, 'f', 2);
+            QString convertido = QString::number(V, 'f', 4);
 
             ui->Resp->setText(convertido);
         }
@@ -52,7 +52,7 @@ void telaClapeyron::Clapeyron(double p, double V, double n, double R, double T, 
 
             ui->variavelResp->setText("n =");
 
-            QString convertido = QString::number(n, 'f', 2);
+            QString convertido = QString::number(n, 'f', 4);
 
             ui->Resp->setText(convertido);
         }
@@ -64,7 +64,7 @@ void telaClapeyron::Clapeyron(double p, double V, double n, double R, double T, 
 
             ui->variavelResp->setText("R =");
 
-            QString convertido = QString::number(R, 'f', 2);
+            QString convertido = QString::number(R, 'f', 4);
 
             ui->Resp->setText(convertido);
         }
@@ -76,7 +76,7 @@ void telaClapeyron::Clapeyron(double p, double V, double n, double R, double T, 
 
             ui->variavelResp->setText("T =");
 
-            QString convertido = QString::number(T, 'f', 2);
+            QString convertido = QString::number(T, 'f', 4);
 
             ui->Resp->setText(convertido);
         }

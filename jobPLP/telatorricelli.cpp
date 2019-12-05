@@ -3,10 +3,10 @@
 
 telaTorricelli::telaTorricelli(QWidget *parent) : QDialog(parent), ui(new Ui::telaTorricelli){
     ui->setupUi(this);
-    ui->variavelV->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelV0->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelA->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelS->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
+    ui->variavelV->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelV0->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelA->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelS->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
 }
 
 telaTorricelli::~telaTorricelli(){
@@ -24,18 +24,29 @@ void telaTorricelli::Torricelli(double v, double v0, double a, double S, QString
 
         ui->variavelResp->setText("v =");
 
-        QString c = QString::number(v, 'f', 2);
+        QString c = QString::number(v, 'f', 4);
 
         ui->Resp->setText(c);
     } else if(variavel == "v0"){
-        v0 = sqrt(pow(v, 2) - 2*a*S);
+        if(pow(v, 2) - 2*a*S < 0){
+            v0 = pow(v, 2) - 2*a*S;
 
-        QPixmap logoV0(":/new/variaveis/images/v0.png");
-        ui->variavelResp->setPixmap(logoV0.scaled(66,66));
+            QPixmap logoV0(":/new/variaveis/images/v0 = raiz.png");
+            ui->variavelResp->setPixmap(logoV0.scaled(66,66));
 
-        QString c = QString::number(v0, 'f', 2);
+            QString c = QString::number(v0, 'f', 4);
 
-        ui->Resp->setText("=" + c);
+            ui->Resp->setText(c);
+        } else {
+            v0 = sqrt(pow(v, 2) - 2 * a * S);
+
+            QPixmap logoV0(":/new/variaveis/images/v0.png");
+            ui->variavelResp->setPixmap(logoV0.scaled(66,66));
+
+            QString c = QString::number(v0, 'f', 4);
+
+            ui->Resp->setText(" = " + c);
+        }
     } else if(variavel == "a"){
         if(S == 0.0){
             QMessageBox::critical(this, "Atenção amigo!", "O valor de S não pode ser igual a zero para essa equação.");
@@ -44,7 +55,7 @@ void telaTorricelli::Torricelli(double v, double v0, double a, double S, QString
 
             ui->variavelResp->setText("a =");
 
-            QString c = QString::number(a, 'f', 2);
+            QString c = QString::number(a, 'f', 4);
 
             ui->Resp->setText(c);
         }
@@ -54,9 +65,9 @@ void telaTorricelli::Torricelli(double v, double v0, double a, double S, QString
         } else {
             S = (pow(v, 2) - pow(v0, 2))/(2*a);
 
-            ui->variavelResp->setText("S =");
+            ui->variavelResp->setText("S = ");
 
-            QString c = QString::number(S, 'f', 2);
+            QString c = QString::number(S, 'f', 4);
 
             ui->Resp->setText(c);
         }

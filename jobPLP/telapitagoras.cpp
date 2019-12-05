@@ -3,9 +3,9 @@
 
 telaPitagoras::telaPitagoras(QWidget *parent) : QDialog(parent), ui(new Ui::telaPitagoras){
     ui->setupUi(this);
-    ui->variavelA->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelB->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelC->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
+    ui->variavelA->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelB->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelC->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
 }
 
 telaPitagoras::~telaPitagoras(){
@@ -33,7 +33,7 @@ void telaPitagoras::Pitagoras(double a, double b, double c, char variavel){
 
             ui->variavelResp->setText("a =");
 
-            QString convertido = QString::number(a, 'f', 2);
+            QString convertido = QString::number(a, 'f', 4);
 
             ui->Resp->setText(convertido);
         }
@@ -51,7 +51,7 @@ void telaPitagoras::Pitagoras(double a, double b, double c, char variavel){
             b = sqrt(pow(c, 2)-pow(a, 2));
 
             ui->variavelResp->setText("b =");
-            QString convertido = QString::number(b, 'f', 2);
+            QString convertido = QString::number(b, 'f', 4);
 
             ui->Resp->setText(convertido);
         }
@@ -60,7 +60,7 @@ void telaPitagoras::Pitagoras(double a, double b, double c, char variavel){
 
         ui->variavelResp->setText("c =");
 
-        QString convertido = QString::number(c, 'f', 2);
+        QString convertido = QString::number(c, 'f', 4);
 
         ui->Resp->setText(convertido);
     }

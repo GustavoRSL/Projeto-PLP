@@ -3,11 +3,11 @@
 
 telaParticula::telaParticula(QWidget *parent) : QDialog(parent), ui(new Ui::telaParticula){
     ui->setupUi(this);
-    ui->variavelFm->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelB->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelI->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelL->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelTeta->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
+    ui->variavelFm->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelB->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelI->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelL->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelTeta->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
 }
 
 telaParticula::~telaParticula(){
@@ -28,7 +28,7 @@ void telaParticula::Particula(double Fm, double B, double i, double l, double te
         QPixmap logoFm(":/new/variaveis/images/Fm.png");
         ui->variavelResp->setPixmap(logoFm.scaled(66,66));
 
-        QString c = QString::number(Fm, 'f', 2);
+        QString c = QString::number(Fm, 'f', 4);
 
         ui->Resp->setText("=" + c);
     } else if (variavel == "B"){
@@ -41,7 +41,7 @@ void telaParticula::Particula(double Fm, double B, double i, double l, double te
 
             ui->variavelResp->setText("B =");
 
-            QString c = QString::number(B, 'f', 2);
+            QString c = QString::number(B, 'f', 4);
 
             ui->Resp->setText(c);
         }
@@ -55,7 +55,7 @@ void telaParticula::Particula(double Fm, double B, double i, double l, double te
 
             ui->variavelResp->setText("i = ");
 
-            QString c = QString::number(i, 'f', 2);
+            QString c = QString::number(i, 'f', 4);
 
             ui->Resp->setText(c);
         }
@@ -69,7 +69,7 @@ void telaParticula::Particula(double Fm, double B, double i, double l, double te
 
             ui->variavelResp->setText("l =");
 
-            QString c = QString::number(l, 'f', 2);
+            QString c = QString::number(l, 'f', 4);
 
             ui->Resp->setText(c);
         }
@@ -81,9 +81,11 @@ void telaParticula::Particula(double Fm, double B, double i, double l, double te
 
             teta /= (M_PI*180); //converter angulo para radianos para calculo do seno
 
-            QString c = QString::number(teta, 'f', 2);
+            ui->variavelResp->setText("θ = ");
 
-            ui->Resp->setText("θ = " + c);
+            QString c = QString::number(teta, 'f', 4);
+
+            ui->Resp->setText(c);
         }
     }
 }

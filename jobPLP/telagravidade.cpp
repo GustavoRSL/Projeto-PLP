@@ -3,11 +3,11 @@
 
 telaGravidade::telaGravidade(QWidget *parent) : QDialog(parent), ui(new Ui::telaGravidade){
     ui->setupUi(this);
-    ui->variavelF->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelG->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelM1->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelM2->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelD->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
+    ui->variavelF->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelG->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelM1->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelM2->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelD->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
 }
 
 telaGravidade::~telaGravidade(){
@@ -26,9 +26,9 @@ void telaGravidade::Gravidade(double F, double G, double m1, double m2, double d
         } else {
             F = (G * m1 * m2)/pow(d,2);
 
-            ui->variavelResp->setText("F = ");
+            ui->variavelResp->setText("F =");
 
-            QString c = QString::number(F, 'f', 2);
+            QString c = QString::number(F, 'f', 4);
 
             ui->Resp->setText(c);
         }
@@ -38,9 +38,9 @@ void telaGravidade::Gravidade(double F, double G, double m1, double m2, double d
         } else {
             G = (F * pow(d, 2))/(m1 * m2);
 
-            ui->variavelResp->setText("G = ");
+            ui->variavelResp->setText("G =");
 
-            QString c = QString::number(G, 'f', 2);
+            QString c = QString::number(G, 'f', 4);
 
             ui->Resp->setText(c);
 
@@ -54,7 +54,7 @@ void telaGravidade::Gravidade(double F, double G, double m1, double m2, double d
             QPixmap logoM1(":/new/variaveis/images/m1.png");
             ui->variavelResp->setPixmap(logoM1.scaled(66,66));
 
-            QString c = QString::number(m1, 'f', 2);
+            QString c = QString::number(m1, 'f', 4);
 
             ui->Resp->setText(" = " + c);
         }
@@ -67,7 +67,7 @@ void telaGravidade::Gravidade(double F, double G, double m1, double m2, double d
             QPixmap logoM2(":/new/variaveis/images/m2.png");
             ui->variavelResp->setPixmap(logoM2.scaled(66,66));
 
-            QString c = QString::number(m2, 'f', 2);
+            QString c = QString::number(m2, 'f', 4);
 
             ui->Resp->setText(" = " + c);
         }
@@ -77,7 +77,7 @@ void telaGravidade::Gravidade(double F, double G, double m1, double m2, double d
         } else {
             d = sqrt((G * m1 * m2)/F);
 
-            ui->variavelResp->setText("d = ");
+            ui->variavelResp->setText("d =");
 
             QString c = QString::number(d, 'f', 2);
 

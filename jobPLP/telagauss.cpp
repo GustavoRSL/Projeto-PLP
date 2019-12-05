@@ -3,9 +3,9 @@
 
 telaGauss::telaGauss(QWidget *parent) : QDialog(parent), ui(new Ui::telaGauss){
     ui->setupUi(this);
-    ui->variavelF->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelP->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelPLinha->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
+    ui->variavelF->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelP->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelPLinha->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
 }
 
 telaGauss::~telaGauss(){
@@ -24,9 +24,9 @@ void telaGauss::Gauss(double f, double p, double pL, QString variavel){
         } else {
             f = (p * pL)/(p + pL);
 
-            ui->variavelResp->setText("f =");
+            ui->variavelResp->setText("f = ");
 
-            QString c = QString::number(f, 'f', 2);
+            QString c = QString::number(f, 'f', 4);
 
             ui->Resp->setText(c);
         }
@@ -36,9 +36,9 @@ void telaGauss::Gauss(double f, double p, double pL, QString variavel){
         } else {
             p = (pL * f)/(pL - f);
 
-            ui->variavelResp->setText("p =");
+            ui->variavelResp->setText("p = ");
 
-            QString c = QString::number(p, 'f', 2);
+            QString c = QString::number(p, 'f', 4);
 
             ui->Resp->setText(c);
         }
@@ -51,9 +51,9 @@ void telaGauss::Gauss(double f, double p, double pL, QString variavel){
             QPixmap logoPL(":/new/variaveis/images/pLinha.png");
             ui->variavelResp->setPixmap(logoPL.scaled(66,66));
 
-            QString c = QString::number(pL, 'f', 2);
+            QString c = QString::number(pL, 'f', 4);
 
-            ui->Resp->setText("=" + c);
+            ui->Resp->setText(" = " + c);
         }
     }
 }

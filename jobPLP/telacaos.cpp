@@ -3,9 +3,9 @@
 
 telaCaos::telaCaos(QWidget *parent) : QDialog(parent), ui(new Ui::telaCaos){
     ui->setupUi(this);
-    ui->variavelXNew->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelK->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelXOld->setValidator(new QDoubleValidator(-1000000, 10000000, 2, this));
+    ui->variavelXNew->setValidator(new QDoubleValidator(-1000000, 1000000, 3, this));
+    ui->variavelK->setValidator(new QDoubleValidator(-1000000, 1000000, 3, this));
+    ui->variavelXOld->setValidator(new QDoubleValidator(-1000000, 10000000, 3, this));
 }
 
 telaCaos::~telaCaos(){
@@ -25,7 +25,7 @@ void telaCaos::Caos(double xNew, double K, double xOld, QString variavel){
         ui->variavelResp1->setPixmap(logoXNew.scaled(66,66));
         ui->variavelResp2->setText(" ");
 
-        QString c = QString::number(xNew, 'f', 2);
+        QString c = QString::number(xNew, 'f', 4);
 
         ui->Resp1->setText("=" + c);
         ui->Resp2->setText(" ");
@@ -38,7 +38,7 @@ void telaCaos::Caos(double xNew, double K, double xOld, QString variavel){
             ui->variavelResp1->setText("K =");
             ui->variavelResp2->setText(" ");
 
-            QString c = QString::number(K, 'f', 2);
+            QString c = QString::number(K, 'f', 4);
 
             ui->Resp1->setText(c);
             ui->Resp2->setText(" ");
@@ -52,8 +52,8 @@ void telaCaos::Caos(double xNew, double K, double xOld, QString variavel){
             delta = 1 - 4*1*(xNew/K);
 
             if(delta < 0){
-                QString ck = QString::number(K, 'f', 2);
-                QString cX = QString::number(xNew, 'f', 2);
+                QString ck = QString::number(K, 'f', 4);
+                QString cX = QString::number(xNew, 'f', 4);
 
                 QMessageBox::warning(this, "Vish! Deu ruim! :(",
                                            "Não existe solução real para k = " + ck + " e X_new = "+ cX + ".\n"+
@@ -66,7 +66,7 @@ void telaCaos::Caos(double xNew, double K, double xOld, QString variavel){
 
                 ui->variavelResp1->setPixmap(logoXNew.scaled(66,66));
 
-                QString c = QString::number(old, 'f', 2);
+                QString c = QString::number(old, 'f', 4);
 
                 ui->Resp1->setText(" = " + c);
             } else if(delta > 0){
@@ -79,8 +79,8 @@ void telaCaos::Caos(double xNew, double K, double xOld, QString variavel){
                 ui->variavelResp1->setPixmap(logoXNew1.scaled(66,66));
                 ui->variavelResp2->setPixmap(logoXNew2.scaled(66,66));
 
-                QString c1 = QString::number(old1, 'f', 2);
-                QString c2 = QString::number(old2, 'f', 2);
+                QString c1 = QString::number(old1, 'f', 6);
+                QString c2 = QString::number(old2, 'f', 6);
 
                 ui->Resp1->setText(" = " + c1);
                 ui->Resp2->setText(" = " + c2);

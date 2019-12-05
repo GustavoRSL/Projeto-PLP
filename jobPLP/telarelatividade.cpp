@@ -3,9 +3,9 @@
 
 telaRelatividade::telaRelatividade(QWidget *parent) : QDialog(parent), ui(new Ui::telaRelatividade){
     ui->setupUi(this);
-    ui->variavelE->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelM->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
-    ui->variavelC->setValidator(new QDoubleValidator(-1000000, 1000000, 2, this));
+    ui->variavelE->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelM->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
+    ui->variavelC->setValidator(new QDoubleValidator(-1000000, 1000000, 4, this));
 }
 
 telaRelatividade::~telaRelatividade(){
@@ -23,7 +23,7 @@ void telaRelatividade::Relatividade(double E, double m, double c, QString variav
 
         ui->variavelResp->setText("E =");
 
-        QString convertido = QString::number(E, 'f', 2);
+        QString convertido = QString::number(E, 'f', 4);
 
         ui->Resp->setText(convertido);
     } else if(variavel == "m"){
@@ -34,7 +34,7 @@ void telaRelatividade::Relatividade(double E, double m, double c, QString variav
 
             ui->variavelResp->setText("m =");
 
-            QString convertido = QString::number(m, 'f', 2);
+            QString convertido = QString::number(m, 'f', 4);
 
             ui->Resp->setText(convertido);
         }
@@ -46,7 +46,7 @@ void telaRelatividade::Relatividade(double E, double m, double c, QString variav
 
             ui->variavelResp->setText("c =");
 
-            QString convertido = QString::number(c, 'f', 2);
+            QString convertido = QString::number(c, 'f', 4);
 
             ui->Resp->setText(convertido);
         }

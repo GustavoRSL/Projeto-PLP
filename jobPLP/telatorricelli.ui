@@ -644,13 +644,13 @@
               <widget class="QLabel" name="variavelResp">
                <property name="minimumSize">
                 <size>
-                 <width>66</width>
+                 <width>100</width>
                  <height>66</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>66</width>
+                 <width>100</width>
                  <height>66</height>
                 </size>
                </property>
